@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="273.0" prefWidth="337.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.prestamo_fx.DesarrolladorViewsController">
+   <children>
+      <BorderPane prefHeight="264.0" prefWidth="337.0">
+         <top>
+            <AnchorPane prefHeight="82.0" prefWidth="371.0" style="-fx-background-color: #6F5CC2;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="69.0" layoutY="4.0" prefHeight="74.0" prefWidth="242.0" text="Insertar Desarrollador" textFill="#fffefe">
+                     <font>
+                        <Font name="Lucida Bright Demibold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </top>
+         <bottom>
+            <AnchorPane prefHeight="29.0" prefWidth="338.0" BorderPane.alignment="CENTER">
+               <children>
+
+                  <Button fx:id="buttonInsertDesarrollador" layoutX="255.0" layoutY="12.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="74.0" styleClass="button-add" stylesheets="@../../css/button.css" text="Add" />
+
+
+                  <Button fx:id="buttonCancelDesarrollador" cancelButton="true" layoutX="177.0" layoutY="12.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="68.0" styleClass="button-delete" stylesheets="@../../css/button.css" text="Cancel" />
+                  <ImageView fitHeight="19.0" fitWidth="29.0" layoutX="261.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../../../Downloads/R%20(1).png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </bottom>
+         <center>
+            <Pane prefHeight="138.0" prefWidth="345.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="34.0" layoutY="40.0" prefHeight="78.0" prefWidth="109.0" text="Nombre:">
+                     <font>
+                        <Font name="Lucida Bright Regular" size="14.0" />
+                     </font>
+                  </Label>
+
+
+                  <TextField fx:id="nomDesarrolladorText" layoutX="143.0" layoutY="57.0" prefHeight="43.0" prefWidth="169.0" />
+               </children>
+            </Pane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

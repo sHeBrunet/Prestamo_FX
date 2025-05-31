@@ -1,0 +1,94 @@
+/* ===== ESTILOS PARA LA BARRA DE MENÚ ===== */
+.menu-bar {
+    -fx-background-color: #6F5CC2; /* Color base */
+    -fx-padding: 0 5px;
+}
+
+/* Estilo para cada menú en la barra */
+.menu {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 8px 15px;
+    -fx-cursor: hand;
+}
+
+.menu-button{
+    -fx-background-color:#6F5CC2;
+}
+.menu-button:hover{ -fx-background-color: #A89DDA;}
+.menu-button:pressed { -fx-background-color: #7156DD ;}
+/* Efecto hover para menús */
+.menu:hover, .menu:showing {
+    -fx-background-color: #A89DDA; /* Color hover */
+    -fx-background-radius: 10px 10px 0 0;
+}
+
+/* ===== ESTILOS PARA MENÚS DESPLEGABLES ===== */
+.context-menu {
+    -fx-background-color: #6F5CC2; /* Color base */
+    -fx-background-radius: 0 0 10px 10px;
+    -fx-border-color: #A89DDA;
+    -fx-border-width: 0 1px 1px 1px;
+    -fx-border-radius: 0 0 10px 10px;
+    -fx-padding: 5px 0;
+}
+
+/* ===== ESTILOS PARA ITEMS DE MENÚ ===== */
+.menu-item {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-padding: 8px 20px;
+}
+
+/* Efecto hover para items */
+.menu-item:hover, .menu-item:focused {
+    -fx-background-color: #A89DDA; /* Color hover */
+}
+
+/* Efecto pressed para items */
+.menu-item:pressed {
+    -fx-background-color: #7156DD; /* Color pressed */
+}
+
+/* Separador de menús */
+.separator-menu .line {
+    -fx-border-color: #A89DDA;
+    -fx-border-width: 1px 0 0 0;
+    -fx-padding: 5px 0;
+}
+
+/* ===== ESTILOS PARA SUBMENÚS ===== */
+.menu-item .menu {
+    -fx-background-color: #52458f; /* Color más oscuro para submenús */
+    -fx-background-radius: 0 10px 10px 0;
+}
+
+.menu-item .context-menu {
+    -fx-background-color: #52458f; /* Color más oscuro para submenús */
+    -fx-background-radius: 0 10px 10px 10px;
+}
+
+/* ===== ESTILOS ESPECIALES PARA CHECKMENUITEM Y RADIOMENUITEM ===== */
+.check-menu-item, .radio-menu-item {
+    -fx-text-fill: white;
+}
+
+/* Estilo para el marcador de selección */
+.check-menu-item:checked > .left-container > .check,
+.radio-menu-item:selected > .left-container > .radio {
+    -fx-background-color: #A89DDA;
+    -fx-shape: "M10,15 L15,20 L25,10 M10,20 L15,25 L25,15"; /* Forma de check */
+}
+
+/* ===== EFECTO FOCUSED CONSISTENTE ===== */
+.menu:focused, .menu-item:focused {
+    -fx-background-color: #7D6CC8; /* Color focused */
+    -fx-border-color: #CDD1D6;
+    -fx-border-width: 0 0 0 3px;
+}
+
+/* ===== ESTILOS PARA ÍCONOS EN MENÚS ===== */
+.menu .icon, .menu-item .icon {
+    -fx-fill: white;
+}

@@ -1,0 +1,184 @@
+.button{
+    -fx-background-color:#6F5CC2;
+}
+
+.button:hover{ -fx-background-color: #A89DDA;}
+.button:pressed { -fx-background-color: #7156DD ;}
+
+.button:focused {
+    -fx-background-color:#7D6CC8;
+    -fx-border-color:#CDD1D6;
+    -fx-border-width: 0px 0px 0px 3px;
+}
+
+/* Botón Principal (Add) */
+.button-add {
+    -fx-background-color: #4CAF50; /* Verde positivo */
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px; /* Radio para borde redondeado */
+    -fx-text-fill: white;
+    -fx-font-size: 9px;
+    -fx-padding: 8px 16px;
+    -fx-cursor: hand;
+    -fx-min-width: 10px;
+    -fx-min-height: 10px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 0, 1, 0, 1);
+    -fx-transition: all 0.2s ease;
+}
+
+.button-add:hover {
+    -fx-background-color: #66BB6A; /* Verde más claro */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 0, 4, 0, 0);
+}
+
+.button-add:pressed {
+    -fx-background-color: #388E3C; /* Verde oscuro */
+    -fx-translate-y: 1px; /* Efecto de presión */
+}
+
+.button-add:focused {
+    -fx-background-color: #4CAF50;
+    -fx-border-color: #CDD1D6;
+    -fx-border-width: 0px 0px 0px 3px;
+}
+
+/* Botón Borrar (Delete) */
+.button-delete {
+    -fx-background-color: #F44336; /* Rojo base */
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px; /* Radio para borde redondeado */
+    -fx-text-fill: white;
+    -fx-font-size: 9px;
+    -fx-padding: 8px 16px;
+    -fx-cursor: hand;
+    -fx-min-width: 10px;
+    -fx-min-height: 10px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 0, 1, 0, 1);
+    -fx-transition: all 0.2s ease;
+}
+
+.button-delete:hover {
+    -fx-background-color: #EF5350; /* Rojo más claro */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 0, 4, 0, 2);
+}
+
+.button-delete:pressed {
+    -fx-background-color: #D32F2F; /* Rojo oscuro */
+    -fx-translate-y: 1px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 0, 1, 0, 1);
+}
+
+.button-delete:focused {
+    -fx-background-color: #F44336;
+    -fx-border-color: #FFCDD2;
+    -fx-border-width: 0px 0px 0px 3px;
+}
+
+/* Icono de basura (opcional) */
+.button-delete .text {
+    -fx-graphic: url('delete-icon.png'); /* Ruta a tu icono */
+    -fx-graphic-text-gap: 8px;
+}
+
+/* Versión con ícono CSS (sin imagen) */
+.button-delete::before {
+    -fx-content: "🗑️"; /* Emoji de basurero */
+    -fx-padding: 0 5px 0 0;
+}
+
+/* Botón Actualizar (Update) - Estilo redondeado */
+.button-update {
+    -fx-background-color: #2196F3; /* Azul moderno */
+      -fx-background-radius: 20px;
+      -fx-border-radius: 20px; /* Radio para borde redondeado */
+      -fx-text-fill: white;
+      -fx-font-size: 9px;
+      -fx-padding: 8px 16px;
+      -fx-cursor: hand;
+      -fx-min-width: 10px;
+      -fx-min-height: 10px;
+      -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 0, 1, 0, 1);
+      -fx-transition: all 0.2s ease;
+}
+
+.button-update:hover {
+    -fx-background-color: #42A5F5; /* Azul más claro */
+    -fx-effect: dropshadow(three-pass-box, rgba(33, 150, 243, 0.5), 10, 0, 0, 4);
+    -fx-scale-x: 1.02;
+    -fx-scale-y: 1.02;
+}
+
+.button-update:pressed {
+    -fx-background-color: #1976D2; /* Azul oscuro */
+    -fx-scale-x: 0.98;
+    -fx-scale-y: 0.98;
+    -fx-effect: dropshadow(three-pass-box, rgba(33, 150, 243, 0.2), 5, 0, 0, 2);
+}
+
+.button-update:focused {
+    -fx-background-color: #2196F3;
+    -fx-border-color: #BBDEFB; /* Azul claro para contraste */
+    -fx-border-width: 2px;
+    -fx-border-radius: 20px;
+}
+
+/* Icono de actualización (flecha circular) */
+.button-update .ikonli-font-icon {
+    -fx-icon-code: "mdi-refresh";
+    -fx-icon-size: 1.5em;
+    -fx-icon-color: white;
+}
+
+/* Versión con emoji si no tienes íconos */
+.button-update::before {
+    -fx-content: "🔄";
+    -fx-padding: 0 8px 0 0;
+}
+
+/* Efecto de rotación al pasar el mouse (para ícono de actualización) */
+.button-update:hover .ikonli-font-icon {
+    -fx-rotate: 360;
+    -fx-transition: rotate 0.8s ease-in-out;
+}
+
+/* Estado deshabilitado */
+.button-update:disabled {
+    -fx-background-color: #BBDEFB; /* Azul muy claro */
+    -fx-text-fill: #757575;
+    -fx-opacity: 0.8;
+    -fx-cursor: default;
+}
+/* Archivo: src/main/resources/css/button.css */
+
+.text-field-error {
+    -fx-border-color: #ff0000;
+    -fx-border-width: 2px;
+    -fx-border-radius: 3px;
+    -fx-effect: dropshadow(three-pass-box, rgba(255,0,0,0.5), 5, 0, 0, 1);
+}
+
+.text-field-error:focused {
+    -fx-border-color: #ff0000;
+    -fx-border-width: 2px;
+}
+
+/* Estilos para los botones (opcional) */
+.button-add {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.button-add:hover {
+    -fx-background-color: #45a049;
+}
+
+.button-delete {
+    -fx-background-color: #f44336;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.button-delete:hover {
+    -fx-background-color: #d32f2f;
+}
